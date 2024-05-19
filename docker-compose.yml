@@ -41,7 +41,7 @@ services:
       - php
 
   phpmyadmin:
-    image: phpmyadmin/phpmyadmin:latest
+    image: arm64v8/phpmyadmin:latest
     container_name: "phpmyadmin_test"
     environment:
       - PMA_ARBITRARY=1 # サーバ設定：サーバーをローカル以外も指定
