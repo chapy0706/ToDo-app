@@ -1,4 +1,3 @@
-version: '3'
 services:
   db:
     image: mysql:8.0
@@ -71,7 +70,8 @@ services:
     working_dir: /var/www
 
   mail:
-    image: mailhog/mailhog
+    platform: linux/arm64
+    image: jcalonso/mailhog:latest
     container_name: "mailhog"
     # ポートフォワードの指定（ホスト側ポート：コンテナ側ポート）
     ports:
